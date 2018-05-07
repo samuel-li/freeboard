@@ -7,10 +7,10 @@ class RTCLib {
 
 	private $CONSTANT = array();
 
-	// private $cookie_file = "/data/".'cookies.txt';
-	private $cookie_file = "/Users/samuel.li/Documents/projects/dashboard/freeboard/data/cookies.txt";
-	// private $rtc_cache = "/data/".'cache.xml';
-	private $rtc_cache = "/Users/samuel.li/Documents/projects/dashboard/freeboard/data/cache.xml";
+	private $cookie_file = "/data/".'cookies.txt';
+	//private $cookie_file = "/Users/samuel.li/Documents/projects/dashboard/freeboard/data/cookies.txt";
+	 private $rtc_cache = "/data/".'cache.xml';
+	//private $rtc_cache = "/Users/samuel.li/Documents/projects/dashboard/freeboard/data/cache.xml";
 
 	private $LOGINURL_1='https://swgjazz.ibm.com:8017/jazz/auth/authrequired';
 	private $LOGINURL_2='https://swgjazz.ibm.com:8017/jazz/auth/j_security_check';
