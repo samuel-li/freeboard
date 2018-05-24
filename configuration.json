@@ -118,7 +118,7 @@
 					"type": "html",
 					"settings": {
 						"html": "var ds = datasources[\"RTCDATA\"];\nvar htmlContent = \"\";\n\nfunction getValue(_ds, env, range, priority) {\n    if(typeof(_ds[env])!=\"undefined\"\n      && typeof(_ds[env][range])!=\"undefined\"\n      && typeof(_ds[env][range][priority])!=\"undefined\") {\n    \treturn _ds[env][range][priority];\n\t} else {\n        return 0;\n    }\n}\nhtmlContent += \"<style type='text/css'>\";\nhtmlContent += \".clr{clear:both;}\";\nhtmlContent += \".panel{padding:12px;color:white;}\";\nhtmlContent += \".row{font-size:16px;} \";\nhtmlContent += \".col{float:left;font-size:16px;width:120px;} \";\nhtmlContent += \".col-red{background-color:red;font-size:20px;font-weight:bold;} .col-pink{background-color:#FF00FF;font-size:18px;font-weight:bold;}\";\nhtmlContent += \".comment{font-size:12px;font-weight:999;font-style:italic;} \";\nhtmlContent += \"</style>\";\nhtmlContent += \"<div class='clr panel'>\";\nhtmlContent += \"<div class='row'>\"+\"Unresolved\"+\"</div>\";\nhtmlContent += \"<div class='clr'><div class='col col-red'>Blocker</div><div class='row col-red'>\"+getValue(ds['overall'], \"Production\", \"Unresolved\", \"Blocker\")+\"</div></div>\";\nhtmlContent += \"<div class='clr'><div class='col col-pink'>Critical</div><div class='row col-pink'>\"+getValue(ds['overall'], \"Production\", \"Unresolved\", \"Critical\")+\"</div></div>\";\nhtmlContent += \"<div class='clr'><div class='col'>Others</div><div class='row'>\"+getValue(ds['overall'], \"Production\", \"Unresolved\", \"Normal\")+\"</div></div>\";\nhtmlContent += \"</div>\";\nhtmlContent += \"<div class='clr panel'>\";\nhtmlContent += \"<div class='row'>\"+\"Total\"+\"</div>\";\nhtmlContent += \"<div class='clr'><div class='col col-red'>Blocker</div><div class='row col-red'>\"+getValue(ds['overall'], \"Production\", \"Total\", \"Blocker\")+\"</div></div>\";\nhtmlContent += \"<div class='clr'><div class='col col-pink'>Critical</div><div class='row col-pink'>\"+getValue(ds['overall'], \"Production\", \"Total\", \"Critical\")+\"</div></div>\";\nhtmlContent += \"<div class='clr'><div class='col'>Others</div><div class='row'>\"+getValue(ds['overall'], \"Production\", \"Total\", \"Normal\")+\"</div></div>\";\nhtmlContent += \"</div>\";\nhtmlContent += \"<DIV class='clr panel comment'>\"+ds[\"summary\"]+\"</DIV>\";\nreturn htmlContent;",
-						"height": 4
+						"height": 5
 					}
 				}
 			]
@@ -422,7 +422,7 @@
 			"settings": {
 				"url": "http://scmonitor.rtp.raleigh.ibm.com:8000/api/data.php?name=scldap02",
 				"use_thingproxy": true,
-				"refresh": 60,
+				"refresh": 30,
 				"method": "GET"
 			}
 		}
