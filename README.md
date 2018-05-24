@@ -25,8 +25,11 @@ http://scmonitor.rtp.raleigh.ibm.com:8000/index.html#source=configuration.json
 
 ### Deploy (build + deploy)
 >root@scmonitor:/home/docker/freeboard# sh deploy.sh
+
 >Stopping freeboard_nginx-php-fpm_1 ... done
+
 >Removing freeboard_nginx-php-fpm_1 ... done
+
 >Removing freeboard_freeboard_1 ... done
 
 ### Additional scripts for server status monitoring
