@@ -23,6 +23,12 @@ http://scmonitor.rtp.raleigh.ibm.com:8000/index.html#source=configuration.json
 **Start docker image by docker composer**
 >docker-compose up -d
 
+### Deploy (build + deploy)
+>root@scmonitor:/home/docker/freeboard# sh deploy.sh
+>Stopping freeboard_nginx-php-fpm_1 ... done
+>Removing freeboard_nginx-php-fpm_1 ... done
+>Removing freeboard_freeboard_1 ... done
+
 ### Additional scripts for server status monitoring
 **checkserver.php (Change the alarm setting in the script)**
 >* * * * * php /root/Documents/checkserver.php >/tmp/checkserver.log 2>&1
