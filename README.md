@@ -1,6 +1,6 @@
 SalesConnect Dashboard provided by freeboard
 =========================
-###Demo Link
+### Demo Link
 http://scmonitor.rtp.raleigh.ibm.com:8000/index.html#source=configuration.json
 
 **UPDATE SERVER STATUS:**
@@ -14,7 +14,7 @@ http://scmonitor.rtp.raleigh.ibm.com:8000/index.html#source=configuration.json
 >curl -kX POST -H 'Content-type: application/json' --data {"current":"R4.5 - June, 2018","next":"R4.5-SEV1"} http://scmonitor.rtp.raleigh.ibm.com:8000/api/report.php?name=milestone
 
 
-###Build and run with Docker
+### Build and run with Docker
 **Compile docker image**
 >cd freeboard
 
@@ -23,7 +23,7 @@ http://scmonitor.rtp.raleigh.ibm.com:8000/index.html#source=configuration.json
 **Start docker image by docker composer**
 >docker-compose up -d
 
-###Additional scripts for server status monitoring
+### Additional scripts for server status monitoring
 **checkserver.php (Change the alarm setting in the script)**
 >* * * * * php /root/Documents/checkserver.php >/tmp/checkserver.log 2>&1
 
